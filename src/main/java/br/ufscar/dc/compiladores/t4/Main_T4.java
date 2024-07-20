@@ -22,7 +22,7 @@ public class Main_T4 {
                 LALexer lexer = new LALexer(cs);
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
                 
-                // Analisador sintático
+                // Analisador semântico
                 LAParser parser = new LAParser(tokens);
                 ProgramaContext arvore = parser.programa();
                 Parser_T4 my_parser = new Parser_T4();
